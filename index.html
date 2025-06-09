@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevComunity - Rede Social para Desenvolvedores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo (topbar) -->
+    <header class="topbar">
+        <div class="topbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>DevComunity</h1>
+            </div>
+            
+            <!-- Menu de navegação -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#foruns">Fóruns</a></li>
+                    <li><a href="#livros">Livros</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Ações do usuário -->
+            <div class="user-actions">
+                <button class="settings-btn" aria-label="Configurações">⚙️</button>
+                <div class="user-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23333'/%3E%3Ccircle cx='20' cy='16' r='6' fill='%23666'/%3E%3Cpath d='M8 32c0-6.627 5.373-12 12-12s12 5.373 12 12' fill='%23666'/%3E%3C/svg%3E" alt="Avatar do usuário">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Container principal -->
+    <div class="main-container">
+        <!-- Sidebar esquerda -->
+        <aside class="sidebar-left">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#painel" class="nav-link active">Painel</a></li>
+                    <li><a href="#minhas-postagens" class="nav-link">Minhas Postagens</a></li>
+                    <li><a href="#comunidades" class="nav-link">Comunidades</a></li>
+                    <li><a href="#configuracoes" class="nav-link">Configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área principal -->
+        <main class="main-content">
+            <!-- Dashboard com cards -->
+            <section class="dashboard">
+                <h2 class="section-title">Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-icon">📚</div>
+                        <h3>Livros da Comunidade</h3>
+                        <p>Descubra os livros mais recomendados pela comunidade</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon">💬</div>
+                        <h3>Fóruns Abertos</h3>
+                        <p>Participe das discussões mais quentes do momento</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon">🎓</div>
+                        <h3>Cursos Recomendados</h3>
+                        <p>Aprimore suas habilidades com cursos selecionados</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon">🔥</div>
+                        <h3>Novidades</h3>
+                        <p>Fique por dentro das últimas tendências em tech</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feed da comunidade -->
+            <section class="community-feed">
+                <h2 class="section-title">Feed da Comunidade</h2>
+                <div class="feed-posts">
+                    <article class="post">
+                        <h3 class="post-title">Postagem de @joana.dev</h3>
+                        <p class="post-content">Acabei de finalizar um projeto incrível usando React e TypeScript! A experiência foi fantástica e aprendi muito sobre hooks customizados. Alguém mais está explorando essas tecnologias?</p>
+                        <div class="post-meta">
+                            <span class="post-time">há 2 horas</span>
+                            <span class="post-likes">❤️ 24</span>
+                        </div>
+                    </article>
+                    
+                    <article class="post">
+                        <h3 class="post-title">Postagem de @carlos.backend</h3>
+                        <p class="post-content">Compartilhando uma dica valiosa sobre otimização de queries SQL. Usar índices compostos pode melhorar drasticamente a performance das suas consultas. Quem quiser trocar uma ideia sobre banco de dados?</p>
+                        <div class="post-meta">
+                            <span class="post-time">há 4 horas</span>
+                            <span class="post-likes">❤️ 18</span>
+                        </div>
+                    </article>
+                    
+                    <article class="post">
+                        <h3 class="post-title">Postagem de @ana.mobile</h3>
+                        <p class="post-content">Lançamento do meu primeiro app na Play Store! Foi uma jornada desafiadora, mas muito gratificante. Obrigada a todos que me ajudaram com dicas e feedback durante o desenvolvimento.</p>
+                        <div class="post-meta">
+                            <span class="post-time">há 6 horas</span>
+                            <span class="post-likes">❤️ 42</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar direita -->
+        <aside class="sidebar-right">
+            <!-- Destaque da Semana -->
+            <div class="highlight-box">
+                <h3 class="highlight-title">Destaque da Semana</h3>
+                <div class="highlight-content">
+                    <div class="highlight-icon">📖</div>
+                    <div class="highlight-text">
+                        <h4>Livro: 'Entendendo Algoritmos'</h4>
+                        <p>Um guia ilustrado para programadores e outros curiosos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Perfil em Alta -->
+            <div class="highlight-box">
+                <h3 class="highlight-title">Perfil em Alta</h3>
+                <div class="highlight-content">
+                    <div class="profile-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23444'/%3E%3Ccircle cx='25' cy='20' r='8' fill='%23777'/%3E%3Cpath d='M10 40c0-8.284 6.716-15 15-15s15 6.716 15 15' fill='%23777'/%3E%3C/svg%3E" alt="Avatar de @rafa.front">
+                    </div>
+                    <div class="profile-info">
+                        <h4>@rafa.front</h4>
+                        <p>Frontend Developer especialista em React e Vue.js</p>
+                        <span class="profile-stats">1.2k seguidores</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>&copy; 2025 DevComunity. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#privacidade">Política de Privacidade</a>
+                <a href="#termos">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
